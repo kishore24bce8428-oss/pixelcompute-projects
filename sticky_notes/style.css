@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 25px;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.note {
+    width: 140px;
+    min-height: 65px;
+    padding: 12px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px #ccc;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.note:nth-child(3n + 1) {
+    background: #fffbdc;
+}
+
+.note:nth-child(3n + 2) {
+    background: #cdebd0;
+}
+
+.note:nth-child(3n + 3) {
+    background: #c9f1f1;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: none;
+    background: #ff8585;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.new-note {
+    width: 140px;
+    margin: 15px auto 0;
+    padding: 10px;
+    background: #ffffa8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+textarea {
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+#add-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    color: #35c66b;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    color: green;
+}
